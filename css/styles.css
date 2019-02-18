@@ -4,8 +4,8 @@ Colors:
 -Medium Blue: rgb(8, 89, 180)
 
 Fonts:
-font-family: 'Roboto', sans-serif; --Site
-font-family: 'Dancing Script', cursive; --Handwriting
+font-family: 'Lato', sans-serif;
+
 */
 
 body {
@@ -15,7 +15,7 @@ body {
     margin: 0px;
     font-size: 16px;
     line-height: 1.4;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 ul {
@@ -30,7 +30,7 @@ a {
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
 }
 
@@ -38,11 +38,11 @@ a {
 | LEFT CONTENT
 ---------------------------------------------*/
 #left_content {
-    display: inline-block;
-    background-color: orange;
+    position: relative;
+    background-color: #00172a;
     text-align: center;
     width: 25%;
-    color: #333;
+    color: #004480;
     float: left;
 }
 
@@ -53,45 +53,52 @@ a {
 #portrait img {
     height: 150px;
     width: 150px;
-    border: 1px solid #333;
     border-radius: 50%;
 }
 
 #contact {
-
+    
 }
 
 
 #contact ul {
-    padding: 10px 40px;
+    padding: 10px 40px 30px 40px;
     list-style: none;
     text-align: left;
 }
 
 #contact ul li {
-    padding: 5px;
+    padding: 10px 5px;
     font-size: 16px;
-    color: #444;
+    color: #30044803;
 }
 
 #left_content h3 {
-    background-color: #333;
-    color: orange;
+    background-color: #002d55;
+    color: #fff;
     padding: 8px;
     font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
 }
 
 #about p {
     text-align: justify;
-    padding: 10px 40px;
+    padding: 30px 30px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+#hobbies {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding-bottom: 5px;
 }
 
 #hobbies ul {
-    padding: 40px 10px;
+    padding: 20px 10px;
 }
 
 #hobbies ul li {
@@ -101,7 +108,7 @@ a {
 }
 
 #hobbies ul li i {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* ------------------------------------------
@@ -111,21 +118,20 @@ a {
 #main_content {
     display: inline-block;
     padding: 30px 80px;
-    text-transform: uppercase;
     color: black;
-    width: 75%;
+    width: 74%;
     text-align: left;
 }
 
 #main_content hr {
-    background-color: orange;
+    background-color: #002d55;
     height: 2px;
     border: none;
 }
 
 
 #main_content i {
-    color: orange;
+    color: #004480;
     margin-right: 15px;
     font-size: 30px;
 }
@@ -139,17 +145,62 @@ a {
     position: relative;
     font-size: 30px;
     padding: 20px 0px;
+    
+}
+
+#header h1 {
+    font-size: 2.5em;
 }
 
 #header h1 span {
-    color: orange;
+    color: #004480;
+    
 }
 
 #header p {
-    margin-top: -40px;
+    margin-top: -50px;
+    color: #555;
     
 }
 
 #education {
     padding-top: 30px;
+}
+
+#skills ul li {
+    color: #555;
+    display: inline-block;
+    padding: 8px 10px;
+    border-right: 1px solid #ccc;
+}
+
+/* ------------------------------------------
+| GRIDS, CONTENT BLOCKS
+---------------------------------------------*/
+
+.content-block {
+    color: #555;
+}
+
+.content-block .content-left {
+    width: 30%; 
+    float: left; 
+    padding: 25px 20px;
+    font-size: 14px;
+}   
+
+.content-block .content-left i {
+    font-size: 16px!important;
+}
+
+.content-block .content-right {
+    width: 60%; 
+    display: inline-block; 
+    padding: 5px;
+}
+
+.content-block .content-right small {
+    display: block;
+    padding: 5px 0px 0px 0px;
+    font-weight: 300;
 }
