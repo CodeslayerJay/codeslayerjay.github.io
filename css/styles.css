@@ -27,6 +27,12 @@ a {
     color: inherit;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 
 /* ------------------------------------------
 | LEFT CONTENT
@@ -107,8 +113,8 @@ a {
     padding: 30px 80px;
     text-transform: uppercase;
     color: black;
-    width: 63%;
-    text-align: left;   
+    width: 75%;
+    text-align: left;
 }
 
 #main_content hr {
