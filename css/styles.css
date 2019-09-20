@@ -244,6 +244,10 @@ hr.shorten {
     }
 }
 
+#education_projects p {
+    text-align: justify;
+}
+
 #education_page .title {
     font-size: 3rem;
     margin-top: -10px;
