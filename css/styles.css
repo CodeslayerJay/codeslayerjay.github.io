@@ -27,10 +27,14 @@ a {
     }
 
     .container {
-        padding: 30px 5px;
-        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .video-demo {
+        width: 250px;
     }
 }
+
 
 .profile-pic {
     border-radius: 50%;
@@ -302,4 +306,6 @@ hr.shorten {
     color: #888;
     text-align: center;
 }
+
+
 
