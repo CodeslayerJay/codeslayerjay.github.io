@@ -21,6 +21,16 @@ a {
 
 }
 
+@media(min-width: 768px){
+    body {
+        padding: 30px 10px;
+    }
+
+    .container {
+        padding: 30px 5px;
+    }
+}
+
 .profile-pic {
     border-radius: 50%;
     height: 150px;
